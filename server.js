@@ -2,6 +2,8 @@ const express = require("express");
 
 const mongoose = require("mongoose");
 const routes = require("./routes/apiRouites");
+const session = require('express-session');
+const passport = require('passport');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -14,6 +16,17 @@ if (process.env.NODE_ENV === "production") {
 }
 // Add routes, both API and view
 app.use(routes);
+
+// Express Session
+app.use(session({
+  secret: 'secret',
+  saveUninitialized: true,
+  resave: true
+}));
+
+// Passport init
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/habittrackerdb");
