@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import Navbar from "../Components/Navbar"
  
-class Home  extends Component{
+class Home extends Component{
 
     render() {
         return (
@@ -18,7 +18,7 @@ class Home  extends Component{
                     </nav>
                 </header>
                 <Navbar />
-                <Navbar />
+            
              
 
                 <section id="banner">
