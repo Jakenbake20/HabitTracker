@@ -2698,9 +2698,15 @@
 				left: 2em;
 			}
 
+			.modal-content{
+				
+				background-color: darkblue;
+			}
+
 			#header nav.right {
 				right: 2em;
 			}
+
 
 			#header nav .button {
 				padding: 0 2em;
