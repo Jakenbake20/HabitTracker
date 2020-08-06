@@ -28,7 +28,7 @@ class Home extends Component{
                         <p>It also has a social element for even more motivation!</p>
                         <ul className="actions">
                             <li><a href="#one" className="button scrolly">Go to Features</a></li>
-                            <li><a href="#" className="button scrolly">Sign up now!</a></li>
+                            <li><a href="/register" className="button scrolly">Sign up now!</a></li>
 
                         </ul>
                     </div>
