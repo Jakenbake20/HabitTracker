@@ -37,6 +37,20 @@ class Register extends Component {
                 </header>
                 <Navbar />
 
+
+
+
+
+
+
+                <footer id="footer">
+                    <div className="inner">
+                        <h2>Habit Tracker</h2>
+                    </div>
+                    <div className="copyright">
+                        &copy; Copyrighted by Habit Tracker <p>Leo | Jacob | Drew | Adison | Austin</p>
+                    </div>
+                </footer>
             </>
         )
     }
