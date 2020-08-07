@@ -14,9 +14,9 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-// Add routes, both API and view
-app.use(routes);
 
+ 
+ 
 // Express Session
 app.use(session({
   secret: 'secret',
@@ -28,6 +28,8 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+// Add routes, both API and view
+app.use(routes);
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/habittrackerdb");
 

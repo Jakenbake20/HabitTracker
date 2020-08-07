@@ -2707,6 +2707,9 @@
 				right: 2em;
 			}
 
+			#register {
+				margin: 20%;
+			}
 
 			#header nav .button {
 				padding: 0 2em;
