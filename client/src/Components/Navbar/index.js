@@ -1,4 +1,6 @@
 import React from "react"
+import Modal from "../Modal"
+
 function Navbar () {
     return(
         <nav id="menu">
@@ -8,8 +10,10 @@ function Navbar () {
             <li><a href="#">Other</a></li>
         </ul>
         <ul className="actions vertical">
-            <li><a href="#" className="button fit">Login</a></li>
+            <li><a href="#" className="button fit">Login...</a></li>
+            <li></li>
         </ul>
+        <Modal />
     </nav>
     )
 }
