@@ -43,9 +43,34 @@ class Register extends Component {
                         <div className="input-group-prepend">
                             <span className="input-group-text" id="basic-addon1">Choose your Username!</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"></input>
+                        <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"></input>
                     </div>
 
+                    <div className="input-group mb-3">      
+                        <div className="input-group-prepend">
+                            <span className="input-group-text" id="basic-addon1">Enter your name</span>
+                        </div>
+                        <input type="text" className="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1"></input>
+                    </div>
+
+                    <div className="input-group mb-3">      
+                        <div className="input-group-prepend">
+                            <span className="input-group-text" id="basic-addon1">Enter your e-mail</span>
+                        </div>
+                        <input type="text" className="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon1"></input>
+                    </div>
+
+                    <div className="input-group mb-3">      
+                        <div className="input-group-prepend">
+                            <span className="input-group-text" id="basic-addon1">Pick a Password!</span>
+                        </div>
+                        <input type="text" className="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1"></input>
+                    </div>
+
+                    <br></br>
+                    <button type="button" className="btn btn-dark">Submit</button>
+
+                
                 </div>
 
 
