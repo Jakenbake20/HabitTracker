@@ -2707,6 +2707,12 @@
 				right: 2em;
 			}
 
+			#register {
+				margin-top: 10%;
+				margin-left: 20%;
+				margin-right: 20%;
+				margin-bottom: 10%;
+			}
 
 			#header nav .button {
 				padding: 0 2em;
