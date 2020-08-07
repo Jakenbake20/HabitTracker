@@ -3,6 +3,10 @@ import Navbar from "../Components/Navbar"
 import { Button, ButtonToolbar } from "react-bootstrap"
 import LoginModal from "../Components/Modal/LoginModal"
 
+function submit() {
+    alert("Info Saved");
+}
+
 
 class Register extends Component {
 
@@ -68,7 +72,7 @@ class Register extends Component {
                     </div>
 
                     <br></br>
-                    <button type="button" className="btn btn-dark">Submit</button>
+                    <button onClick={submit} type="button" className="btn btn-dark">Submit</button>
 
                 
                 </div>
