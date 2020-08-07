@@ -1,7 +1,7 @@
 const axios = require("axios");
 const router = require("express").Router();
 const passport = require('passport');
-
+const db = require("../models")
 // router.get("/#", (req, res) => {
 //   axios
 //     .get("#", { params: req.query })
@@ -15,14 +15,14 @@ router.post('/register', function(req, res){
     var password2 = req.body.password2;
   
     
-      var newUser = new User({
+      var newUser = new db.User({
         name: req.body.name,
         email: req.body.email,
         username: req.body.username,
         password: req.body.password
       });
   
-      User.createUser(newUser, function(err, user){
+      db.User.createUser(newUser, function(err, user){
         if(err) throw err;
         res.send(user).end()
       });
