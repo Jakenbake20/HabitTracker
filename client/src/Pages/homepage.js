@@ -1,5 +1,8 @@
 import React, {Component} from "react"
 import Navbar from "../Components/Navbar"
+import Register from "./register"
+import Login from "../Components/Modal"
+import {Modal, Button, Row, Col, form} from "react-bootstrap"
  
 class Home extends Component{
 
@@ -9,12 +12,16 @@ class Home extends Component{
            
 
                 <header id="header">
+                <a href="/" className="logo">Habit Tracker</a>
                     <nav className="left">
-                        <a href="#menu"><span>Menu</span></a>
+                        <a className="habitbox" href="/"> 
+                        <p className="habit">H.T</p>
+                        </a>
                     </nav>
-                    <a href="/" className="logo">Habit Tracker</a>
+                    
                     <nav className="right">
-                        <a href="#" className="button alt">Log in</a>
+                    
+                        {/* <a href="#" className="button alt">Log in</a> */}
                     </nav>
                 </header>
                 <Navbar />

@@ -13,23 +13,18 @@ function Login(props) {
           Login
         </Button>
   
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose}><br/><br/>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>Login</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-          <Modal.Footer>
+          <Modal.Body>Enter your log in info here</Modal.Body><br/>
+          
 
-              username: <input name="username" value={props.username} onChange={props.handleInputChange} /> <br/>
-              password: <input name="password" value={props.password} onChange={props.handleInputChange} /><br/>
+              Username: <input name="username" value={props.username} onChange={props.handleInputChange} className="nput"/> <br/>
+              Password: <input name="password" value={props.password} onChange={props.handleInputChange} className="nput"/><br/>
                 <button onClick={props.handleLogin}>Log In</button>
+                <Modal.Footer>
 
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
           </Modal.Footer>
         </Modal>
       </>
