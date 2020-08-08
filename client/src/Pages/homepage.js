@@ -68,7 +68,7 @@ class Home extends Component {
                 <section id="banner">
                     <div className="content">
                         <h1>Habit Tracker</h1>
-                        <p className="under">Habit Tracker offers an unparrelel habit tracking experience to help you develop better habits and eliminate bad habits.</p>
+                        <p className="under">Habit Tracker offers an unparalleled habit tracking experience to help you develop better habits and eliminate bad habits.</p>
                         <p className="under">It also has a social element for even more motivation!</p>
                         <ul className="actions">
                             <li><a href="#one" className="button scrolly">Go to Features</a></li>
