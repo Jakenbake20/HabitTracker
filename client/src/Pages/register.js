@@ -40,7 +40,7 @@ class Register extends Component {
                     <nav className="left">
                         <a href="#menu"><span>Menu</span></a>
                     </nav>
-                    <a href="index.html" className="logo">Habit Tracker</a>  hjlkhlkhlkhlkkljljk
+                    <a href="/" className="logo">Habit Tracker</a>
                 <Login handleInputChange={this.handleInputChange} handleLogin={this.handleLogin} username={this.state.username} password={this.state.password} />
                     <nav className="right">
                         <div className="modal">
