@@ -1613,6 +1613,11 @@
 
 /* Type */
 
+		.under{
+			font-family: "Open Sans", Arial, Helvetica, sans-serif;
+			font-weight: bold;
+		}
+
 	body, input, select, textarea {
 		color: #767d85;
 		font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -2781,10 +2786,6 @@
 				left: 2em;
 			}
 
-			.modal-content{
-				
-				background-color: darkblue;
-			}
 
 			#header nav.right {
 				right: 2em;
