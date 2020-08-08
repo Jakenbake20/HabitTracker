@@ -37,27 +37,26 @@ class User extends Component {
         return (
             <>
                 <header id="header">
-                <a href="/" className="logo">Habit Tracker</a>
+                    <a href="/" className="logo">Habit Tracker</a>
                     <nav className="left">
-                        <a className="habitbox" href="/"> 
-                        <p className="habit">H.T</p>
+                        <a className="habitbox" href="/">
+                            <p className="habit">H.T.</p>
                         </a>
                     </nav>
-                    <a href="/" className="logo">Habit Tracker</a>
-                    
+
                     <Login handleInputChange={this.handleInputChange} handleLogin={this.handleLogin} username={this.state.username} password={this.state.password} />
                     <nav className="right">
                         <div className="modal">
                             <nav className="right">
-                            <ButtonToolbar>
-                                <button className="button alt"
-                                    onClick={() => this.setState({ addModalShow: true })}  >Log in</button>
+                                <ButtonToolbar>
+                                    <button className="button alt"
+                                        onClick={() => this.setState({ addModalShow: true })}  >Log in</button>
 
-                                <LoginModal
-                                    show={this.state.addModalShow}
-                                    onHide={addModalClose}
-                                />
-                            </ButtonToolbar>
+                                    <LoginModal
+                                        show={this.state.addModalShow}
+                                        onHide={addModalClose}
+                                    />
+                                </ButtonToolbar>
                             </nav>
                         </div>
                     </nav>
@@ -65,7 +64,24 @@ class User extends Component {
                 <Navbar />
 
 
-                
+                <div className="container fluid">
+                    <h1 className="dashboard">Hello {this.state.fullname}</h1>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <h4 className="userinfo">Profile Info</h4>                            
+                        </div>
+                        <div class="col-sm">
+                            <h4 className="userinfo">Your Goals Today</h4>
+                        </div>
+                        <div class="col-sm">
+                            <h4 className="userinfo">The goals you've met</h4>
+                        </div>
+                    </div>
+                </div>
+
 
 
 
@@ -77,7 +93,7 @@ class User extends Component {
                         <h2>Habit Tracker</h2>
                     </div>
                     <div className="copyright">
-                        &copy; Copyrighted by Habit Tracker <p>Leo | Jacob | Drew | Adison | Austin</p>
+                        &copy; Copyrighted by Habit Tracker <p>Leo | Jacob | Drew | Austin</p>
                     </div>
                 </footer>
             </>

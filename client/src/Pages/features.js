@@ -1,11 +1,11 @@
 import React, { Component } from "react"
 import Navbar from "../Components/Navbar"
-import { Button, ButtonToolbar, Alert } from "react-bootstrap"
+import { Button, ButtonToolbar } from "react-bootstrap"
 import LoginModal from "../Components/Modal/LoginModal"
 import API from "../utils/api"
 import Login from "../Components/Modal"
 
-class Register extends Component {
+class Features extends Component {
 
     constructor(props) {
         super(props);
@@ -63,43 +63,47 @@ class Register extends Component {
                 </header>
                 <Navbar />
 
-
-                <div className="container" id="container" >
-                    <div className="container">
-                        <h2 className="lefth2-reg">Register now!</h2>
+                <div class="row">
+                    <div class="col-sm-8" id="featureleft">
+                        <h2 className="lefth2">Develop Good Habits</h2>
+                        <p className="leftp">Pick the habits and goals that are important to you! Don't pick what you want to accomplish
+                        based on what other people deem important. Being more happy and productive starts here! </p>
+                        
                     </div>
-
-                    <div className="input-group mb-3" >
-                        <input type="text" className="form-control" name="username" value={this.state.username} onChange={this.handleInputChange} placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"></input>
+                
+                    <div class="col-sm-4" id="featureright">
+                        <img className="featpic" src="/images/yoga.jpg"></img>
+                        
                     </div>
-<br/>
-                    <div className="input-group mb-3">
-                        <input type="text" className="form-control" name="fullname" value={this.state.fullname} onChange={this.handleInputChange} placeholder="Name" aria-label="Name" aria-describedby="basic-addon1"></input>
-                    </div>
-                    <br/>
-                    <div className="input-group mb-3">
-                        <input type="text" className="form-control" name="email" placeholder="email" aria-label="email" value={this.state.email} onChange={this.handleInputChange} aria-describedby="basic-addon1"></input>
-                    </div>
-                    <br/>
-                    <div className="input-group mb-3">
-                        <input type="text" className="form-control" name="password" placeholder="password" value={this.state.password} onChange={this.handleInputChange} aria-label="password" aria-describedby="basic-addon1"></input>
-                    </div>
-
-                    <br></br>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col">
-                                <button onClick={this.submit} type="button" className="btn btn-dark" id="btmSub">Submit</button>
-                            </div>
-
-                            <div className="col" id="btm">
-                                <a type="button" href="https://wutangclan.net/name-generator/"   id="btm-name">Name Ideas</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
+<br/> <br/>
+
+                <div class="row">
+                    <div class="col-sm-8" id="featureleft">
+                    <h2 className="lefth2">Keep those Habits</h2>
+                        <p className="leftp">Feel the daily motivation that is re-fueled every time you mark off another task from your list. Move the goals
+                        you pick to achieve from what you WANT to accomplish to what you HAVE accomplished.</p>
+                    </div>
+                 
+                    <div class="col-sm-4" id="featureright">
+                        <img className="featpic" src="/images/thumbs.jpg"></img>
+                    </div>
+                </div>
+
+                <br/> <br/>
+
+                <div class="row">
+                    <div class="col-sm-8" id="featureleft">
+                    <h2 className="lefth2">Leave your old habits behind</h2>
+                        <p className="leftp">The more and more good habits you pick up and continue to do daily the less time you will 
+                        have for the bad habits that were holding you back. No more getting in your own way. Only lifting yourself up</p>
+                    </div>
+                 
+                    <div class="col-sm-4" id="featureright">
+                        <img className="featpic" src="/images/rearview.jpg"></img>
+                    </div>
+                </div>
 
 
 
@@ -119,4 +123,4 @@ class Register extends Component {
 
 }
 
-export default Register
+export default Features
