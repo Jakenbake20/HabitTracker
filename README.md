@@ -5,4 +5,4 @@ For every habit completed the user will earn points which they can then compare 
 
 Team Members
 
-Addison Nance, Austin Burnett, Drew Cagino, Jacob Wheat, Leo Gervilla.
+Austin Burnett, Drew Cagino, Jacob Wheat, Leo Gervilla.
