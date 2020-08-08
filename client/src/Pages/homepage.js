@@ -71,7 +71,7 @@ class Home extends Component {
                         <p className="under">Habit Tracker offers an unparalleled habit tracking experience to help you develop better habits and eliminate bad habits.</p>
                         <p className="under">It also has a social element for even more motivation!</p>
                         <ul className="actions">
-                            <li><a href="#one" className="button scrolly">Go to Features</a></li>
+                            <li><a href="/features" className="button scrolly">Go to Features</a></li>
                             <li><a href="/register" className="button scrolly">Sign up now!</a></li>
 
                         </ul>
@@ -157,7 +157,7 @@ class Home extends Component {
                         <h2>Habit Tracker</h2>
                     </div>
                     <div className="copyright">
-                        &copy; Copyrighted by Habit Tracker <p>Leo | Jacob | Drew | Adison | Austin</p>
+                        &copy; Copyrighted by Habit Tracker <p>Leo | Jacob | Drew | Austin</p>
                     </div>
                 </footer>
             </>

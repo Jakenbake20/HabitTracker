@@ -5,7 +5,7 @@ import LoginModal from "../Components/Modal/LoginModal"
 import API from "../utils/api"
 import Login from "../Components/Modal"
 
-class User extends Component {
+class Features extends Component {
 
     constructor(props) {
         super(props);
@@ -63,26 +63,47 @@ class User extends Component {
                 </header>
                 <Navbar />
 
-
-                <div className="container fluid">
-                    <h1 className="dashboard">Hello {this.state.fullname}</h1>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <h4 className="userinfo">Profile Info</h4>                            
-                        </div>
-                        <div class="col-sm">
-                            <h4 className="userinfo">Your Goals Today</h4>
-                        </div>
-                        <div class="col-sm">
-                            <h4 className="userinfo">The goals you've met</h4>
-                        </div>
+                <div class="row">
+                    <div class="col-sm-8" id="featureleft">
+                        <h2 className="lefth2">Develop Good Habits</h2>
+                        <p className="leftp">Pick the habits and goals that are important to you! Don't pick what you want to accomplish
+                        based on what other people deem important. Being more happy and productive starts here! </p>
+                        
+                    </div>
+                
+                    <div class="col-sm-4" id="featureright">
+                        <img className="featpic" src="/images/yoga.jpg"></img>
+                        
                     </div>
                 </div>
 
+<br/> <br/>
 
+                <div class="row">
+                    <div class="col-sm-8" id="featureleft">
+                    <h2 className="lefth2">Keep those Habits</h2>
+                        <p className="leftp">Feel the daily motivation that is re-fueled every time you mark off another task from your list. Move the goals
+                        you pick to achieve from what you WANT to accomplish to what you HAVE accomplished.</p>
+                    </div>
+                 
+                    <div class="col-sm-4" id="featureright">
+                        <img className="featpic" src="/images/thumbs.jpg"></img>
+                    </div>
+                </div>
+
+                <br/> <br/>
+
+                <div class="row">
+                    <div class="col-sm-8" id="featureleft">
+                    <h2 className="lefth2">Leave your old habits behind</h2>
+                        <p className="leftp">The more and more good habits you pick up and continue to do daily the less time you will 
+                        have for the bad habits that were holding you back. No more getting in your own way. Only lifting yourself up</p>
+                    </div>
+                 
+                    <div class="col-sm-4" id="featureright">
+                        <img className="featpic" src="/images/rearview.jpg"></img>
+                    </div>
+                </div>
 
 
 
@@ -102,4 +123,4 @@ class User extends Component {
 
 }
 
-export default User
+export default Features

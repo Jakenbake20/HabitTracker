@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Navbar from "../Components/Navbar"
-import { Button, ButtonToolbar } from "react-bootstrap"
+import { Button, ButtonToolbar, Alert } from "react-bootstrap"
 import LoginModal from "../Components/Modal/LoginModal"
 import API from "../utils/api"
 import Login from "../Components/Modal"
@@ -65,19 +65,22 @@ class Register extends Component {
 
 
                 <div className="container" id="container" >
+                    <div className="container">
+                        <h2 className="lefth2-reg">Register now!</h2>
+                    </div>
 
                     <div className="input-group mb-3" >
                         <input type="text" className="form-control" name="username" value={this.state.username} onChange={this.handleInputChange} placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"></input>
                     </div>
-
+<br/>
                     <div className="input-group mb-3">
                         <input type="text" className="form-control" name="fullname" value={this.state.fullname} onChange={this.handleInputChange} placeholder="Name" aria-label="Name" aria-describedby="basic-addon1"></input>
                     </div>
-
+                    <br/>
                     <div className="input-group mb-3">
                         <input type="text" className="form-control" name="email" placeholder="email" aria-label="email" value={this.state.email} onChange={this.handleInputChange} aria-describedby="basic-addon1"></input>
                     </div>
-
+                    <br/>
                     <div className="input-group mb-3">
                         <input type="text" className="form-control" name="password" placeholder="password" value={this.state.password} onChange={this.handleInputChange} aria-label="password" aria-describedby="basic-addon1"></input>
                     </div>
@@ -107,7 +110,7 @@ class Register extends Component {
                         <h2>Habit Tracker</h2>
                     </div>
                     <div className="copyright">
-                        &copy; Copyrighted by Habit Tracker <p>Leo | Jacob | Drew | Adison | Austin</p>
+                        &copy; Copyrighted by Habit Tracker <p>Leo | Jacob | Drew | Austin</p>
                     </div>
                 </footer>
             </>
