@@ -10,7 +10,7 @@ function Login(props) {
     return (
       <>
         <Button variant="primary" onClick={handleShow}>
-          Launch demo modal
+          Login
         </Button>
   
         <Modal show={show} onHide={handleClose}>

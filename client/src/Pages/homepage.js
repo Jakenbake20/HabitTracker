@@ -12,7 +12,7 @@ class Home extends Component{
                     <nav className="left">
                         <a href="#menu"><span>Menu</span></a>
                     </nav>
-                    <a href="index.html" className="logo">Habit Tracker</a>
+                    <a href="/" className="logo">Habit Tracker</a>
                     <nav className="right">
                         <a href="#" className="button alt">Log in</a>
                     </nav>
