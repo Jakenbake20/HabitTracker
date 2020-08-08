@@ -43,7 +43,6 @@ class Home extends Component {
                         <p className="habit">H.T</p>
                         </a>
                     </nav>
-                    <a href="/" className="logo">Habit Tracker</a>
                     
                     <Login handleInputChange={this.handleInputChange} handleLogin={this.handleLogin} username={this.state.username} password={this.state.password} />
                     <nav className="right">

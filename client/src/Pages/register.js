@@ -37,27 +37,26 @@ class Register extends Component {
         return (
             <>
                 <header id="header">
-                <a href="/" className="logo">Habit Tracker</a>
+                    <a href="/" className="logo">Habit Tracker</a>
                     <nav className="left">
-                        <a className="habitbox" href="/"> 
-                        <p className="habit">H.T</p>
+                        <a className="habitbox" href="/">
+                            <p className="habit">H.T</p>
                         </a>
                     </nav>
-                    <a href="/" className="logo">Habit Tracker</a>
-                    
+
                     <Login handleInputChange={this.handleInputChange} handleLogin={this.handleLogin} username={this.state.username} password={this.state.password} />
                     <nav className="right">
                         <div className="modal">
                             <nav className="right">
-                            <ButtonToolbar>
-                                <button className="button alt"
-                                    onClick={() => this.setState({ addModalShow: true })}  >Log in</button>
+                                <ButtonToolbar>
+                                    <button className="button alt"
+                                        onClick={() => this.setState({ addModalShow: true })}  >Log in</button>
 
-                                <LoginModal
-                                    show={this.state.addModalShow}
-                                    onHide={addModalClose}
-                                />
-                            </ButtonToolbar>
+                                    <LoginModal
+                                        show={this.state.addModalShow}
+                                        onHide={addModalClose}
+                                    />
+                                </ButtonToolbar>
                             </nav>
                         </div>
                     </nav>
@@ -84,8 +83,17 @@ class Register extends Component {
                     </div>
 
                     <br></br>
-                    <button onClick={this.submit} type="button" className="btn btn-dark" id="btmSub">Submit</button>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col">
+                                <button onClick={this.submit} type="button" className="btn btn-dark" id="btmSub">Submit</button>
+                            </div>
 
+                            <div className="col" id="btm">
+                                <a type="button" href="https://wutangclan.net/name-generator/"   id="btm-name">Name Ideas</a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
