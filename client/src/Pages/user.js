@@ -40,7 +40,7 @@ class User extends Component {
                     <a href="/" className="logo">Habit Tracker</a>
                     <nav className="left">
                         <a className="habitbox" href="/">
-                            <p className="habit">H.T</p>
+                            <p className="habit">H.T.</p>
                         </a>
                     </nav>
 
