@@ -9,13 +9,13 @@ function Login(props) {
   
     return (
       <>
-        <Button variant="primary" onClick={handleShow}>
-          Login
+        <Button variant="primary" onClick={handleShow} className="button alt" id="modalpop">
+          Log In
         </Button>
   
         <Modal show={show} onHide={handleClose}><br/><br/>
           <Modal.Header closeButton>
-            <Modal.Title>Login</Modal.Title>
+            <Modal.Title>Log In</Modal.Title>
           </Modal.Header>
           <Modal.Body>Enter your log in info here</Modal.Body><br/>
           
