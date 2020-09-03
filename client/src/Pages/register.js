@@ -9,7 +9,20 @@ class Register extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { deps: [], addModalShow: false, username: "", fullname: "", email: "", password: "" }
+        this.state = { deps: [],
+             addModalShow: false, 
+             username: "", 
+             fullname: "", 
+             email: "", 
+             password: "",
+              message:{
+                  username:"",
+                  fullname:"",
+                  email: "",
+                  password: ""
+
+              }
+            }
     }
 
     handleInputChange = event => {
@@ -19,16 +32,32 @@ class Register extends Component {
     }
     submit = event => {
         console.log(this.state.username, this.state.fullname, this.state.email, this.state.password)
-        API.signup({
-            name: this.state.fullname,
-            email: this.state.email,
-            password: this.state.password,
-            username: this.state.username
-        })
+       if (this.state.fullname.length>0&&this.state.username.length>0
+        &&this.state.email.length>0&&this.state.password.length>0){
+            API.signup({
+                name: this.state.fullname,
+                email: this.state.email,
+                password: this.state.password,
+                username: this.state.username
+            }).then(results=>{
+                window.location.href="/user"
+            })
+        }else{
+         this.setState({
+             message:{
+                username:"Username is required",
+                fullname:"Your name is required",
+                email: "An email is required",
+                password: "A password is required"
+             }
+         })   
+        }
+      
     }
     handleLogin = event => {
         API.signin({ username: this.state.username, password: this.state.password }).then(results => {
             console.log(results)
+            window.location.href="/user"
         })
     }
     render() {
@@ -71,18 +100,22 @@ class Register extends Component {
 
                     <div className="input-group mb-3" >
                         <input type="text" className="form-control" name="username" value={this.state.username} onChange={this.handleInputChange} placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"></input>
+                        <b style={{color: "red"}}>  {this.state.message.username}</b>
                     </div>
 <br/>
                     <div className="input-group mb-3">
                         <input type="text" className="form-control" name="fullname" value={this.state.fullname} onChange={this.handleInputChange} placeholder="Name" aria-label="Name" aria-describedby="basic-addon1"></input>
+                       <b style={{color: "red"}}> {this.state.message.fullname}</b>
                     </div>
                     <br/>
                     <div className="input-group mb-3">
                         <input type="text" className="form-control" name="email" placeholder="email" aria-label="email" value={this.state.email} onChange={this.handleInputChange} aria-describedby="basic-addon1"></input>
+                        <b style={{color: "red"}}>{this.state.message.email}</b>
                     </div>
                     <br/>
                     <div className="input-group mb-3">
-                        <input type="text" className="form-control" name="password" placeholder="password" value={this.state.password} onChange={this.handleInputChange} aria-label="password" aria-describedby="basic-addon1"></input>
+                        <input type="password" className="form-control" name="password" placeholder="password" value={this.state.password} onChange={this.handleInputChange} aria-label="password" aria-describedby="basic-addon1"></input>
+                       <b style={{color: "red"}}> {this.state.message.password}</b>
                     </div>
 
                     <br></br>
